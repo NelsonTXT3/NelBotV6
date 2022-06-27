@@ -15,6 +15,12 @@ gak terima Yok betumbu lagi 🗿
 Jangan lupa SV owner ku ya 
 wa.me//${ownernomer}
 
+Hai kak ☺️ 
+Kalian bisa mendukung saya agar bot ini tetap up to date dengan cara donasi
+Berapapun donasi kalian akan sangat berarti 👍
+Linknya = https://saweria.co/NelBotMD
+Thanks Kak!
+
 	`
 }
 
@@ -441,8 +447,8 @@ exports.donasi  = (ownernomer) => {
 Hai kak ☺️ 
 Kalian bisa mendukung saya agar bot ini tetap up to date dengan cara donasi
 Berapapun donasi kalian akan sangat berarti 👍
-
-Thanks!
+Linknya = https://saweria.co/NelBotMD
+Thanks kak!
 
   —「 *SEWA | JADI BOT | RUN BOT* 」—
 
@@ -460,7 +466,6 @@ Thanks!
   *JASA RUN BOT*
   *≻* Run Bot 15k (1 minggu)
   *≻* Run Bot 20k (1 bulan)
-  *≻* Run Bot 20k (Permanen)
 
    *_PEMBAYARAN_* 
    - _Gopay_
