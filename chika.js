@@ -4578,7 +4578,9 @@ case 'ownermenu':
 var riych = await getBuffer(picak+'Owner Menu')
 await chika.send5ButImg(from, `` + '' + lang.ownermenu(prefix), `© ${footer}`,riych, [{"urlButton": {"displayText": "𝐌𝐲 𝐓𝐢𝐤𝐓𝐨𝐤","url": `${myweb}`}},{"urlButton": {"displayText": "𝐌𝐲 𝐆𝐫𝐮𝐩","url": `${mygc}`}},{"quickReplyButton": {"displayText": "Donasi","id": 'donate'}},{"quickReplyButton": {"displayText": "Back List","id": 'command'}}] )
 break
-case 'donasi':
+case 'donasi': 
+case 'sewa':
+case 'sewabot':
 var riych = await getBuffer(picak+'Donasi')
 await chika.send5ButImg(from, `` + '' + lang.donasi(ownernomer), `© ${footer}`,riych, [{"urlButton": {"displayText": "𝐌𝐲 𝐓𝐢𝐤𝐓𝐨𝐤","url": `${myweb}`}},{"urlButton": {"displayText": "𝐌𝐲 𝐆𝐫𝐮𝐩","url": `${mygc}`}},{"quickReplyButton": {"displayText": "Donasi","id": 'donate'}},{"quickReplyButton": {"displayText": "Back List","id": 'command'}}] )
 break
