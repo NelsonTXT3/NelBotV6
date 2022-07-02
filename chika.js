@@ -1883,8 +1883,7 @@ case 'okick': {
 	case 'kick': {
 		if (!m.isGroup) return sticGroup(from)
                 if (!isBotAdmins) return sticBotAdmin(from)
-                if (!isAdmins) return sticAdmin(from)
-                if (isCreator) return reply(`*Gamau kick dia ayang ku*`)
+                if (!isAdmins) return sticAdmin(from)                
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 		await chika.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
