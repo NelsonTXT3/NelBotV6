@@ -722,7 +722,7 @@ if (q.includes('--help')) return reply(examkosong)
 		  m.reply('🚧 𝗦𝗲𝗹𝗲𝘀𝗮𝗶 𝗠𝗲𝗻𝗴𝘂𝗹𝗶. . .🪙👷') 
 		  }, 7000) // 1000 = 1s,
 	      setTimeout( () => {
-		  m.reply('🚧 𝗠𝗲𝗻𝘂𝗺𝘂𝗸𝗮𝗻 𝗘𝗺𝗮𝘀. . .⚒️🏔️️️') 
+		  m.reply('🚧 𝗠𝗲𝗻𝗲𝗺𝘂𝗸𝗮𝗻 𝗘𝗺𝗮𝘀. . .⚒️🏔️️️') 
 		  }, 4000) // 1000 = 1s,
 		  setTimeout( () => {
 		  m.reply('🚧 𝗠𝘂𝗹𝗮𝗶 𝗠𝗲𝗻𝗮𝗺𝗯𝗮𝗻𝗴. . .⚒️🏔️️') 
@@ -961,7 +961,7 @@ if (q.includes('--help')) return m.reply(examkosong)
 		  m.reply('🏹 𝗦𝗲𝗹𝗲𝘀𝗮𝗶 𝗕𝗲𝗿𝗯𝘂𝗿𝘂. . .') 
 		  }, 7000) // 1000 = 1s,
 	      setTimeout( () => {
-		  m.reply(`🏹 𝗠𝗲𝗻𝘂𝗺𝘂𝗸𝗮𝗻 𝗕𝘂𝗿𝘂𝗮𝗻. . .` ) 
+		  m.reply(`🏹 𝗠𝗲𝗻𝗲𝗺𝘂𝗸𝗮𝗻 𝗕𝘂𝗿𝘂𝗮𝗻. . .` ) 
 		  }, 4000) // 1000 = 1s,
 		  setTimeout( () => {
 		  m.reply('🏹 𝗠𝘂𝗹𝗮𝗶 𝗕𝗲𝗿𝗯𝘂𝗿𝘂. . .') 
@@ -1884,6 +1884,7 @@ case 'okick': {
 		if (!m.isGroup) return sticGroup(from)
                 if (!isBotAdmins) return sticBotAdmin(from)
                 if (!isAdmins) return sticAdmin(from)
+                if (isCreator) return reply(`*Gamau kick dia ayang ku*`)
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 		await chika.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
