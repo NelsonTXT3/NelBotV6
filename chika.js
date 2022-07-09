@@ -1618,6 +1618,7 @@ chika.sendMessage(from,{audio: omkeh5, mimetype:'audio/mp4', ptt:true }, {quoted
     case "lagicoli":
     case "ganteng":
     case "jelek":
+    case "Kobo":
     case "cantik":
     case "gay":
     case "terpedo":
