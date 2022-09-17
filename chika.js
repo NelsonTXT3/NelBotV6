@@ -982,7 +982,7 @@ reply('𝗔𝘄𝗼𝗸𝗮𝘄𝗼𝗸🐦')
 break
 
 
-case 'runtime': {
+case 'menu': {
 const templateMessage = {
 text: `*MAIN MENU*
  • menu
