@@ -1389,15 +1389,10 @@ text: `*MAIN MENU*
  • metalg`,
 templateButtons: [
 {
+index: 1, 
 urlButton: {
 displayText: '𝐌𝐲 𝐓𝐢𝐤𝐓𝐨𝐤', 
 url: `${youtube}`
-}
-}, 
-{
-urlButton: {
-displayText: `Owner`,
-url: `wa.me//6281241100804`
 }
 },
 ],
