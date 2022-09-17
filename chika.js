@@ -982,7 +982,7 @@ reply('𝗔𝘄𝗼𝗸𝗮𝘄𝗼𝗸🐦')
 break
 
 case 'menu': 
-let jawab = halo kak ${pushname} 🐦
+let jawab = `halo kak ${pushname} 🐦
 *MAIN MENU*
  • menu
  • infobot
