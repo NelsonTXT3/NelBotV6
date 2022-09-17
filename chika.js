@@ -202,7 +202,7 @@ omkeh4 = fs.readFileSync(`./${gaa}.mp3`)
 chika.sendMessage(from, {audio: omkeh4, mimetype:'audio/mp4', ptt:true }, {quoted:m}) 
 }
 const apasih = (hehe) => {
-const bisaa = ['apasih','Kasar']
+const bisaa = ['apasih','image/Kasar']
 const gaa = bisaa[Math.floor(Math.random() * bisaa.length)]
 omkeh4 = fs.readFileSync(`./${gaa}.mp3`)
 chika.sendMessage(from, {audio: omkeh4, mimetype:'audio/mp4', ptt:true }, {quoted:m}) 
