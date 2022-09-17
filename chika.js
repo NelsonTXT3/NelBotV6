@@ -190,7 +190,7 @@ omkeh4 = fs.readFileSync('./${gaa}.mp3')
 chika.sendMessage(from, {audio: omkeh4, mimetype:'audio/mp4', ptt:true }, {quoted:m}) 
 }
 const sound = (hehe) => {
-const bisaa = ['sound1','sound2','sound4','sound5','sound6','sound7','sound8','sound9','sound11','sound12','sound13','sound14','sound15','sound16','sound17','sound18','sound19','sound20','sound21','sound22','sound23','sound24','sound25','sound26','sound27','sound28','sound29','sound30','sound31','sound32','sound33','sound34','sound35','sound36','sound37','sound38','sound39','sound40','sound41','sound42','sound43','sound44','sound45','sound46','sound47','sound48','sound49','sound50','sound51','sound52','sound53','sound54','sound55','sound56','sound57','sound58']
+const bisaa = ['sound1','sound2','sound60','sound61','sound62','sound63','sound64','sound65','sound65','sound64','sound63','sound62','sound61','sound60','sound59','sound59','sound4','sound5','sound6','sound7','sound8','sound9','sound11','sound12','sound13','sound14','sound15','sound16','sound17','sound18','sound19','sound20','sound21','sound22','sound23','sound24','sound25','sound26','sound27','sound28','sound29','sound30','sound31','sound32','sound33','sound34','sound35','sound36','sound37','sound38','sound39','sound40','sound41','sound42','sound43','sound44','sound45','sound46','sound47','sound48','sound49','sound50','sound51','sound52','sound53','sound54','sound55','sound56','sound57','sound58']
 const gaa = bisaa[Math.floor(Math.random() * bisaa.length)]
 omkeh4 = fs.readFileSync(`./${gaa}.mp3`)
 chika.sendMessage(from, {audio: omkeh4, mimetype:'audio/mp4', ptt:true }, {quoted:m}) 
@@ -809,7 +809,7 @@ chika.sendMessage(from,{audio: omkeh3, mimetype:'audio/mp4', ptt:true }, {quoted
  case ':(':
  case 'dalah':
  case 'T_T':
- const bisaa = ['sad1','sad2','sad3','sad4','segala','hanyasatu','sound10']
+ const bisaa = ['sad1','sad2','sad3','sad4','segala','hanyasatu','sound10','sound60','sound60','sound66','sound66','sound63','sound63']
 const gaa = bisaa[Math.floor(Math.random() * bisaa.length)]
  omkeh4 = fs.readFileSync(`./${gaa}.mp3`)
 chika.sendMessage(from,{audio: omkeh4, mimetype:'audio/mp4', ptt:true }, {quoted:m}) 
