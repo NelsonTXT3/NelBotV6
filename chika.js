@@ -982,10 +982,7 @@ reply('𝗔𝘄𝗼𝗸𝗮𝘄𝗼𝗸🐦')
 break
 
 case 'menu': {
-let timestamp = speed()
-let latensi = speed() - timestamp
-const templateMessage = {
-text: `halo kak ${pushname} 🐦
+reply(`halo kak ${pushname} 🐦
 *MAIN MENU*
  • menu
  • infobot
@@ -1389,18 +1386,7 @@ text: `halo kak ${pushname} 🐦
  • metalb2
  • metalg
  • metalg
-	`,footer: `${latensi.toFixed(4)} Second`,
-templateButtons: [
-{
-index: 1, 
-urlButton: {
-displayText: '𝐌𝐲 𝐓𝐢𝐤𝐓𝐨𝐤', 
-url: `${youtube}`
-}
-},
-],
-}
-const sendm = chika.sendMessage(from, templateMessage)
+	`)
 setTimeout( () => {
 sound(from)
   }, 1000)
