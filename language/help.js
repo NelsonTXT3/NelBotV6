@@ -6,7 +6,7 @@
 
 // Menu
 exports.menu = (botname, pushname) => {
-	return`halo kaka ${pushname} 🐦
+	return`halo kak ${pushname} 🐦
 
 *MAIN MENU*
  • menu
