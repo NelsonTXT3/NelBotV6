@@ -981,11 +981,415 @@ case 'awkokkkkkk':
 reply('𝗔𝘄𝗼𝗸𝗮𝘄𝗼𝗸🐦')
 break
 
-case 'speed': {
+case 'menu': {
 let timestamp = speed()
 let latensi = speed() - timestamp
 const templateMessage = {
-text: '*⚡ Kecepatan Bot*',footer: `${latensi.toFixed(4)} Second`,
+text: `halo kak ${pushname} 🐦
+*MAIN MENU*
+ • menu
+ • infobot
+ • donate
+ • dashboard
+ • owner
+ • cekdrive
+ • cekbandwidth
+ • cekpremium
+ • listpremium
+ • listsewa
+ • speed
+ • runtime
+ • listbahasa
+*CONVERTER/TOOLS*
+ • sticker
+ • stickerwm
+ • smeme
+ • toimg
+ • tovideo
+ • tomp3
+ • ttp
+ • attp
+ • emojimix
+ • nuliskiri
+ • nuliskanan
+ • foliokiri
+ • foliokanan
+ • say
+ • translate
+*ANONYMOUS CHATS*
+ • anonymous
+ • start
+ • next
+ • stop
+ • sendprofile
+*STORE MENU*
+ • list
+ • addlist
+ • dellist
+ • update
+ • jeda
+ • tambah
+ • kurang
+ • kali
+ • bagi
+ • proses < reply chat >
+ • done < reply chat >
+*DOWNLOADS MENU*
+ • play
+ • tmp3
+ • ytmp4
+ • instagram
+ • igstory
+ • tiktok
+ • tiktoknowm
+ • tiktokaudio
+ • mediafire
+ • gitclone
+*GROUP MENU*
+ • afk
+ • welcome
+ • left
+ • setwelcome
+ • changewelcome
+ • delsetwelcome
+ • setleft
+ • changeleft
+ • delsetleft
+ • linkgc
+ • setppgc
+ • setnamegc
+ • setdesc
+ • antilink
+ • antiwame
+ • open
+ • close
+ • add
+ • kick
+ • promote
+ • demote
+ • revoke
+ • hidetag
+ • checksewa
+*GAME MENU*
+ • tictactoe
+ • delttt
+ • casino
+ • delcasino
+*SEARCH MENU*
+ • lirik
+ • grupwa
+ • pinterest
+ • ytsearch
+ • searchbyimage
+*RANDOM MENU*
+ • cecan
+ • cogan
+ • waifu
+*BALANCE MENU*
+ • topglobal
+ • toplocal
+ • buylimit
+ • buyglimit
+ • transfer
+ • limit
+ • balance
+*STORAGE*
+ • addstik
+ • addvn
+ • addimg
+ • addvid
+ • liststik
+ • listvn
+ • listimg
+ • listvid
+*BAILEYS*
+ • fitnah
+ • nowa
+ • getquoted
+ • fakehidetag
+ • react
+ • setcmd
+ • delcmd
+*OWNERS MENU*
+ • ${prefix}autobio
+ • ${prefix}autorespond
+ • ${prefix}anticall
+ • ${prefix}autoblok
+ • ${prefix}join
+ • ${prefix}left
+ • ${prefix}self
+ • ${prefix}public
+ • ${prefix}setppbot
+ • ${prefix}broadcast
+ • ${prefix}bcimg
+ • ${prefix}bcstik
+ • ${prefix}bcvn
+ • ${prefix}bcvideo
+ • ${prefix}bcsewa
+ • ${prefix}addpremium
+ • ${prefix}delpremium
+ • ${prefix}addsewa
+ • ${prefix}delsewa
+*ASUPAN MENU*
+ • ${prefix}chika
+ • ${prefix}delvira
+ • ${prefix}ayu
+ • ${prefix}bunga
+ • ${prefix}aura
+ • ${prefix}nisa
+ • ${prefix}ziva
+ • ${prefix}yana
+ • ${prefix}viona
+ • ${prefix}syania
+ • ${prefix}riri
+ • ${prefix}syifa
+ • ${prefix}mama_gina
+ • ${prefix}alcakenya
+ • ${prefix}mangayutri
+ • ${prefix}rikagusriani
+ • ${prefix}asupan
+ • ${prefix}bocil
+ • ${prefix}geayubi
+ • ${prefix}santuy
+ • ${prefix}ukhty
+ • ${prefix}syifa
+ • ${prefix}baka
+ • ${prefix}smug
+ • ${prefix}neko_sfw
+ • ${prefix}hentai_gif
+ • ${prefix}spank
+ • ${prefix}blowjob
+ • ${prefix}cumarts
+ • ${prefix}eroyuri
+ • ${prefix}eroneko
+ • ${prefix}erokemonomimi
+ • ${prefix}erokitsune
+ • ${prefix}ero
+ • ${prefix}feet
+ • ${prefix}erofeet
+ • ${prefix}feetgif
+ • ${prefix}femdom
+ • ${prefix}futanari
+ • ${prefix}hentai
+ • ${prefix}holoero
+ • ${prefix}holo
+ • ${prefix}keta
+ • ${prefix}kitsune
+ • ${prefix}kemonomimi
+ • ${prefix}pussyart
+ • ${prefix}pussywankgif
+ • ${prefix}girl_solo
+ • ${prefix}girl_solo_gif
+ • ${prefix}tits
+ • ${prefix}trap
+ • ${prefix}yuri
+ • ${prefix}avatar2
+ • ${prefix}anal
+ • ${prefix}bj
+ • ${prefix}boobs
+ • ${prefix}classic
+ • ${prefix}cumsluts
+ • ${prefix}kuni
+ • ${prefix}lesbian
+ • ${prefix}neko
+ • ${prefix}neko_gif
+ • ${prefix}ahegao
+ • ${prefix}bdsm
+ • ${prefix}cuckold
+ • ${prefix}cum
+ • ${prefix}foot
+ • ${prefix}gangbang
+ • ${prefix}glasses
+ • ${prefix}jahy
+ • ${prefix}masturbation
+ • ${prefix}nsfw_neko
+ • ${prefix}orgy
+ • ${prefix}panties
+ • ${prefix}tentacles
+ • ${prefix}thighs
+ • ${prefix}zettai${petik}
+*TEXTPRO MENU*${petik}
+ • ${prefix}halloween2
+ • ${prefix}horror
+ • ${prefix}game8bit
+ • ${prefix}layered
+ • ${prefix}glitch2
+ • ${prefix}coolg
+ • ${prefix}coolwg
+ • ${prefix}realistic
+ • ${prefix}space3d
+ • ${prefix}gtiktok
+ • ${prefix}stone
+ • ${prefix}marvel
+ • ${prefix}marvel2
+ • ${prefix}pornhub
+ • ${prefix}avengers
+ • ${prefix}metalr
+ • ${prefix}metalg
+ • ${prefix}metalg2
+ • ${prefix}halloween2
+ • ${prefix}lion
+ • ${prefix}wolf_bw
+ • ${prefix}wolf_g
+ • ${prefix}ninja
+ • ${prefix}3dsteel
+ • ${prefix}horror2
+ • ${prefix}lava
+ • ${prefix}bagel
+ • ${prefix}blackpink
+ • ${prefix}rainbow2
+ • ${prefix}water_pipe
+ • ${prefix}halloween
+ • ${prefix}sketch
+ • ${prefix}sircuit
+ • ${prefix}discovery
+ • ${prefix}metallic2
+ • ${prefix}fiction
+ • ${prefix}demon
+ • ${prefix}transformer
+ • ${prefix}berry
+ • ${prefix}thunder
+ • ${prefix}magma
+ • ${prefix}3dstone
+ • ${prefix}neon
+ • ${prefix}glitch
+ • ${prefix}harry_potter
+ • ${prefix}embossed
+ • ${prefix}broken
+ • ${prefix}papercut
+ • ${prefix}gradient
+ • ${prefix}glossy
+ • ${prefix}watercolor
+ • ${prefix}multicolor
+ • ${prefix}neon_devil
+ • ${prefix}underwater
+ • ${prefix}bear
+ • ${prefix}wonderfulg
+ • ${prefix}christmas
+ • ${prefix}neon_light
+ • ${prefix}snow
+ • ${prefix}cloudsky
+ • ${prefix}luxury2
+ • ${prefix}gradient2
+ • ${prefix}summer
+ • ${prefix}writing
+ • ${prefix}engraved
+ • ${prefix}summery
+ • ${prefix}3dglue
+ • ${prefix}metaldark
+ • ${prefix}neonlight
+ • ${prefix}oscar
+ • ${prefix}minion
+ • ${prefix}holographic
+ • ${prefix}purple
+ • ${prefix}glossyb
+ • ${prefix}deluxe2
+ • ${prefix}glossyc
+ • ${prefix}fabric
+ • ${prefix}neonc
+ • ${prefix}newyear
+ • ${prefix}newyear2
+ • ${prefix}metals
+ • ${prefix}xmas
+ • ${prefix}blood
+ • ${prefix}darkg
+ • ${prefix}joker
+ • ${prefix}wicker
+ • ${prefix}natural
+ • ${prefix}firework
+ • ${prefix}skeleton
+ • ${prefix}balloon
+ • ${prefix}balloon2
+ • ${prefix}balloon3
+ • ${prefix}balloon4
+ • ${prefix}balloon5
+ • ${prefix}balloon6
+ • ${prefix}balloon7
+ • ${prefix}steel
+ • ${prefix}gloss
+ • ${prefix}denim
+ • ${prefix}decorate
+ • ${prefix}decorate2
+ • ${prefix}peridot
+ • ${prefix}rock
+ • ${prefix}glass
+ • ${prefix}glass2
+ • ${prefix}glass3
+ • ${prefix}glass4
+ • ${prefix}glass5
+ • ${prefix}glass6
+ • ${prefix}glass7
+ • ${prefix}glass8
+ • ${prefix}captain_as2
+ • ${prefix}robot
+ • ${prefix}equalizer
+ • ${prefix}toxic
+ • ${prefix}sparkling
+ • ${prefix}sparkling2
+ • ${prefix}sparkling3
+ • ${prefix}sparkling4
+ • ${prefix}sparkling5
+ • ${prefix}sparkling6
+ • ${prefix}sparkling7
+ • ${prefix}decorative
+ • ${prefix}chocolate
+ • ${prefix}strawberry
+ • ${prefix}koifish
+ • ${prefix}bread
+ • ${prefix}matrix
+ • ${prefix}blood2
+ • ${prefix}neonligth2
+ • ${prefix}thunder2
+ • ${prefix}3dbox
+ • ${prefix}neon2
+ • ${prefix}roadw
+ • ${prefix}bokeh
+ • ${prefix}gneon
+ • ${prefix}advanced
+ • ${prefix}dropwater
+ • ${prefix}wall
+ • ${prefix}chrismast
+ • ${prefix}honey
+ • ${prefix}drug
+ • ${prefix}marble
+ • ${prefix}marble2
+ • ${prefix}ice
+ • ${prefix}juice
+ • ${prefix}rusty
+ • ${prefix}abstra
+ • ${prefix}biscuit
+ • ${prefix}wood
+ • ${prefix}scifi
+ • ${prefix}metalr
+ • ${prefix}purpleg
+ • ${prefix}shiny 
+ • ${prefix}jewelry
+ • ${prefix}jewelry2
+ • ${prefix}jewelry3
+ • ${prefix}jewelry4
+ • ${prefix}jewelry5
+ • ${prefix}jewelry6
+ • ${prefix}jewelry7
+ • ${prefix}jewelry8
+ • ${prefix}metalh
+ • ${prefix}golden
+ • ${prefix}glitter
+ • ${prefix}glitter2
+ • ${prefix}glitter3
+ • ${prefix}glitter4
+ • ${prefix}glitter5
+ • ${prefix}glitter6
+ • ${prefix}glitter7
+ • ${prefix}metale
+ • ${prefix}carbon
+ • ${prefix}candy
+ • ${prefix}metalb
+ • ${prefix}gemb
+ • 3dchrome
+ • metalb2
+ • metalg
+ • metalg
+	`,footer: `${latensi.toFixed(4)} Second`,
 templateButtons: [
 {
 index: 1, 
@@ -997,17 +1401,14 @@ url: `${youtube}`
 ],
 }
 const sendm = chika.sendMessage(from, templateMessage)
+setTimeout( () => {
+sound(from)
+  }, 1000)
 }
+		     
 break
 
 
-case 'menu': {
-await chika.send5ButImg(from, `` + '' + lang.menu(botname, pushname), `© ${ownername}`,thumb, [{"urlButton": {"displayText": "𝐌𝐲 𝐓𝐢𝐤𝐓𝐨𝐤","url": `${youtube}`}},{"urlButton": {"displayText": `Owner`,"url": `wa.me//6281241100804`}}])
- setTimeout( () => {
-  sound(from)
-  }, 1000)
-}
-	break
   
             default:
                 if (budy.startsWith('=>')) {
