@@ -981,12 +981,29 @@ case 'awkokkkkkk':
 reply('𝗔𝘄𝗼𝗸𝗮𝘄𝗼𝗸🐦')
 break
 
-
+case 'speed': {
+let timestamp = speed()
+let latensi = speed() - timestamp
+const templateMessage = {
+text: '*⚡ Kecepatan Bot*',footer: `${latensi.toFixed(4)} Second`,
+templateButtons: [
+{
+index: 1, 
+urlButton: {
+displayText: '𝐌𝐲 𝐓𝐢𝐤𝐓𝐨𝐤', 
+url: `${youtube}`
+}
+},
+],
+}
+const sendm = chika.sendMessage(from, templateMessage)
+}
+break
 
 
 case 'menu': {
 if(typemenu == 'image'){
-await chika.send5ButImg(from, `` + '' + lang.menu(botname, pushname, salam), `© ${ownername}`,thumb, [{"urlButton": {"displayText": "𝐌𝐲 𝐓𝐢𝐤𝐓𝐨𝐤","url": `${youtube}`}},{"urlButton": {"displayText": `Owner`,"url": `wa.me//6281241100804`}}])
+await chika.send5ButImg(from, `` + '' + lang.menu(botname, pushname), `© ${ownername}`,thumb, [{"urlButton": {"displayText": "𝐌𝐲 𝐓𝐢𝐤𝐓𝐨𝐤","url": `${youtube}`}},{"urlButton": {"displayText": `Owner`,"url": `wa.me//6281241100804`}}])
  setTimeout( () => {
   sound(from)
   }, 1000)
