@@ -1002,7 +1002,6 @@ break
 
 
 case 'menu': {
-if(typemenu == 'image'){
 await chika.send5ButImg(from, `` + '' + lang.menu(botname, pushname), `© ${ownername}`,thumb, [{"urlButton": {"displayText": "𝐌𝐲 𝐓𝐢𝐤𝐓𝐨𝐤","url": `${youtube}`}},{"urlButton": {"displayText": `Owner`,"url": `wa.me//6281241100804`}}])
  setTimeout( () => {
   sound(from)
