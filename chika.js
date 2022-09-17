@@ -982,7 +982,7 @@ break
 
 case 'runtime': {
 const templateMessage = {
-text: '*MAIN MENU*
+text: `*MAIN MENU*
  • menu
  • infobot
  • donate
