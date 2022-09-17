@@ -825,7 +825,7 @@ nangis(from)
  if (!m.isGroup) return apasih(from)
  if (!isBotAdmins) return
   if (isAdmins) return araara(from)
- const bisaaa = ['apasih','image/Gakboleh gitu']
+ const bisaaa = ['apasih','image/Gaboleh gitu']
 const gaaa = bisaaa[Math.floor(Math.random() * bisaaa.length)]
  omkeh4 = fs.readFileSync(`./${gaaa}.mp3`)
 chika.sendMessage(from,{audio: omkeh4, mimetype:'audio/mp4', ptt:true }, {quoted:m}) 
