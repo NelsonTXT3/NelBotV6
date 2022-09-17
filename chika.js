@@ -184,9 +184,9 @@ module.exports = chika = async (chika, m, chatUpdate, store) => {
          
               //—————「 Auto Sound + Sticker 」—————//
 const araara = (hehe) => {
-const bisaa = ['jangan Toxic','Kasar','Kasar']
-const gaa = bisaa[Math.floor(Math.random() * bisaa.length)]
-omkeh4 = fs.readFileSync('./${gaa}.mp3')
+const bisaa = ['janganToxic','Kasar','Kasar']
+const gee = bisaa[Math.floor(Math.random() * bisaa.length)]
+omkeh4 = fs.readFileSync('./${gee}.mp3')
 chika.sendMessage(from, {audio: omkeh4, mimetype:'audio/mp4', ptt:true }, {quoted:m}) 
 }
 const sound = (hehe) => {
