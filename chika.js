@@ -780,6 +780,7 @@ chika.sendMessage(from,{audio: omkeh3, mimetype:'audio/mp4', ptt:true }, {quoted
  break   
 		      
  case 'i like you':
+ case 'i'
  if (!isBotAdmins) return
 omkeh3 = fs.readFileSync('./image/I like you.mp3')
 chika.sendMessage(from,{audio: omkeh3, mimetype:'audio/mp4', ptt:true }, {quoted:m}) 
