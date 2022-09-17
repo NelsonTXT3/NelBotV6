@@ -981,8 +981,8 @@ case 'awkokkkkkk':
 reply('𝗔𝘄𝗼𝗸𝗮𝘄𝗼𝗸🐦')
 break
 
-case 'menu': {
-reply(`halo kak ${pushname} 🐦
+case 'menu': 
+let jawab = halo kak ${pushname} 🐦
 *MAIN MENU*
  • menu
  • infobot
@@ -1385,13 +1385,11 @@ reply(`halo kak ${pushname} 🐦
  • 3dchrome
  • metalb2
  • metalg
- • metalg
-	`)
+ • metalg`
+reply(jawab)
 setTimeout( () => {
 sound(from)
-  }, 1000)
-}
-		     
+}, 1000)     
 break
 
 
