@@ -839,7 +839,7 @@ nangis(from)
  case 'bot babi':
  if (!m.isGroup) return apasih(from)
  if (!isBotAdmins) return
-  if (isAdmins) return araara(from)
+ if (isAdmins) return araara(from)
  const bisaaa = ['apasih','image/Gaboleh gitu']
 const gaaa = bisaaa[Math.floor(Math.random() * bisaaa.length)]
  omkeh4 = fs.readFileSync(`./${gaaa}.mp3`)
