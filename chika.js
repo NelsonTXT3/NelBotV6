@@ -999,8 +999,8 @@ break
 
 case 'menu': 
 reply(`*BOT INFO*
- • Creator : ${ownerName}
- • Bot Name : ${botName}
+ • Creator : *Nelson*
+ • Bot Name : *NelBot-MD*
 
 	*MAIN MENU*
 	 • menu
