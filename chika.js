@@ -998,423 +998,473 @@ sound(from)
 break
 
 case 'menu': {
-const templateMessage = {
-text: `* ┌── 「 *Group Menu* 」
-	├ linkgroup
-	├ ephemeral [option]
-	├ setppgc [image]
-	├ setname [text]
-	├ setdesc [text]
-	├ group [option]
-	├ editinfo [option]
-	├ add @user
-	├ kick @user
-	├ hidetag [text]
-	├ tagall [text]
-	├ antilink [on/off]
-	├ mute [on/off]
-	├ promote @user
-	├ demote @user
-	├ vote [text]
-	├ devote
-	├ upvote
-	├ cekvote
-	├ hapusvote
-	├ bacot2
-	├ bucin
-	├ musik
-	├ sound
-	├ bodoh
-	├ lolii
-	├ kenamental
-	├ lagi_nyari_jodoh
-	├ kenabuly
-	├ jomblo
-	├ terkaya
-	├ lagingentod
-	├ babu
-	├ jadibadut
-	├ tolol
-	├ artis
-	├ bego
-	├ pakboy
-	├ terpintar
-	├ beban
-	├ nyimak
-	├ sange
-	├ lagisad 	 
-	├ lebsi 	
-	├ lagicoli
-	├ ganteng
-	├ jelek
-	├ cantik
-	├ gay
-	├ terpedo
-	├ wibu
-	├ sayang
-	├ ngewe
-	├ selingkuh
-	└───────
+reply(`*BOT INFO*
+ • Creator : ${ownerName}
+ • Bot Name : ${botName}
+ • Runtime : ${runtime(process.uptime())}
+
+
+	*MAIN MENU*
+	 • menu
+	 • infobot
+	 • donate
+	 • dashboard
+	 • owner
+	 • cekdrive
+	 • cekbandwidth
+	 • cekpremium
+	 • listpremium
+	 • listsewa
+	 • speed
+	 • runtime
+	 • listbahasa
 	
-	┌── 「 *Rpg Menu* 」
-	├ berburu
-	├ mancing
-	├ menambang
-	├ mining
-	├ adventur
-	├ mancing
-	├ heal
-	├ profile
-	├ inventory
-	├ leaderboard
-	├ buy
-	├ sell
-	└───────
+	*GROUP MENU*
+	 • afk
+	 • welcome
+	 • left
+	 • setwelcome
+	 • changewelcome
+	 • delsetwelcome
+	 • setleft
+	 • changeleft
+	 • delsetleft
+	 • linkgc
+	 • setppgc
+	 • setnamegc
+	 • setdesc
+	 • antilink
+	 • antiwame
+	 • open
+	 • close
+	 • add
+	 • kick
+	 • promote
+	 • demote
+	 • revoke
+	 • hidetag
+	 • checksewa
+	 • musik
+	• sound
+	• bodoh
+	• lolii
+	• kenamental
+	• lagi_nyari_jodoh
+	• kenabuly
+	• jomblo
+	• terkaya
+	• lagingentod
+	• babu
+	• jadibadut
+	• tolol
+	• artis
+	• bego
+	• pakboy
+	• terpintar
+	• beban
+	• nyimak
+	• sange
+	• lagisad 	 
+	• lebsi 	
+	• lagicoli
+	• ganteng
+	• jelek
+	• cantik
+	• gay
+	• terpedo
+	• wibu
+	• sayang
+	• ngewe
+	• selingkuh
+	 
+	*CONVERTER/TOOLS* 
+	 • sticker
+	 • stickerwm
+	 • smeme
+	 • toimg
+	 • tovideo
+	 • tomp3
+	 • ttp
+	 • attp
+	 • emojimix
+	 • nuliskiri
+	 • nuliskanan
+	 • foliokiri
+	 • foliokanan
+	 • say
+	 • translate
 	
-	┌── 「 *Downloader Menu* 」
-	├ tiktoknowm [url]
-	├ tiktokwm [url]
-	├ tiktokmp3 [url]
-	├ instagram [url]
-	├ twitter [url]
-	├ twittermp3 [url]
-	├ facebook [url]
-	├ pinterestdl [url]
-	├ ytmp3 [url]
-	├ ytmp4 [url]
-	├ getmusic [query]
-	├ getvideo [query]
-	├ umma [url]
-	├ joox [query]
-	├ soundcloud [url]
-	└───────
+	*ANONYMOUS CHATS*
+	 • anonymous
+	 • start
+	 • next
+	 • stop
+	 • sendprofile
 	
-	┌── 「 *Search Menu* 」
-	├ play [query]
-	├ yts [query]
-	├ google [query]
-	├ gimage [query]
-	├ pinterest [query]
-	├ wallpaper [query]
-	├ wikimedia [query]
-	├ ytsearch [query]
-	├ ringtone [query]
-	├ stalk [option] [query]
-	├ webtoons [query]
-	├ drakor [query]
-	├ anime [query]
-	├ character [query]
-	├ manga [query]
-	└───────
+	*STORE MENU*
+	 • list
+	 • addlist
+	 • dellist
+	 • update
+	 • jeda
+	 • tambah
+	 • kurang
+	 • kali
+	 • bagi
+	 • proses < reply chat >
+	 • done < reply chat >
 	
-	┌── 「 *Random Menu* 」
-	├ coffe
-	├ quotesanime
-	├ motivasi
-	├ dilanquote
-	├ bucinquote
-	├ katasenja
-	├ puisi
-	├ couple
-	├ anime
-	├ waifu
-	├ husbu
-	├ loli
-	├ nekochan
-	├ meguminn
-	├ apk
-	├ neko
-	├ shinobu
-	├ waifus (nsfw)
-	├ nekos (nsfw)
-	├ trap (nsfw)
-	├ blowjob (nsfw)
-	└───────
+	*DOWNLOADS MENU*
+	 • play
+	 • ytmp3
+	 • ytmp4
+	 • instagram
+	 • igstory
+	 • tiktok
+	 • tiktoknowm
+	 • tiktokaudio
+	 • mediafire
+	 • gitclone
 	
-	┌── 「 *Random Anime Menu* 」
-	├ loli
-	├ neko
-	├ waifu
-	├ shinobu
-	├ megumin
-	├ bully
-	├ cuddle
-	├ cry
-	├ hug
-	├ awoo
-	├ kiss
-	├ lick
-	├ pat
-	├ smug
-	├ bonk
-	├ yeet
-	├ blush
-	├ smile
-	├ wave
-	├ highfive
-	├ handhold
-	├ nom
-	├ bite
-	├ glomp
-	├ slap
-	├ kill
-	├ happy
-	├ wink
-	├ poke
-	├ dance
-	├ cringe
-	└───────
+	*GAME MENU*
+	 • tictactoe
+	 • delttt
+	 • casino
+	 • delcasino
 	
-	┌── 「 *Text Pro Menu* 」
-	├ 3dchristmas
-	├ 3ddeepsea
-	├ americanflag
-	├ 3dscifi
-	├ 3drainbow
-	├ 3dwaterpipe
-	├ halloweenskeleton
-	├ sketch
-	├ bluecircuit
-	├ space
-	├ metallic
-	├ fiction
-	├ greenhorror
-	├ transformer
-	├ berry
-	├ thunder
-	├ magma
-	├ 3dcrackedstone
-	├ 3dneonlight
-	├ impressiveglitch
-	├ naturalleaves
-	├ fireworksparkle
-	├ matrix
-	├ dropwater
-	├ harrypotter
-	├ foggywindow
-	├ neondevils
-	├ christmasholiday
-	├ 3dgradient
-	├ blackpink
-	├ gluetext
-	└───────
+	*SEARCH MENU*
+	 • lirik
+	 • grupwa
+	 • pinterest
+	 • ytsearch
+	 • searchbyimage
 	
-	┌── 「 *Photo Oxy Menu* 」
-	├ shadow
-	├ romantic
-	├ smoke
-	├ burnpapper
-	├ naruto
-	├ lovemsg
-	├ grassmsg
-	├ lovetext
-	├ coffecup
-	├ butterfly
-	├ harrypotter
-	├ retrolol
-	└───────
+	*RANDOM MENU*
+	 • cecan
+	 • cogan
+	 • waifu
 	
-	┌── 「 *Ephoto Menu* 」
-	├ ffcover
-	├ crossfire
-	├ galaxy
-	├ glass
-	├ neon
-	├ beach
-	├ blackpink
-	├ igcertificate
-	├ ytcertificate
-	└───────
 	
-	┌── 「 *Fun Menu* 」
-	├ bagaimanakah
-	├ kapankah
-	├ apakah
-	├ bisakah
-	├ rate
-	├ wangy
-	├ gantengcek
-	├ cekganteng
-	├ cantikcek
-	├ cekcantik
-	├ sangecek
-	├ ceksange
-	├ cekme
-	├ gaycek
-	├ cekgay
-	├ lesbicek
-	├ halah
-	├ hilih
-	├ huluh
-	├ heleh
-	├ holoh
-	├ jadian
-	├ jodohku
-	├ delttt
-	├ tictactoe
-	├ family100
-	├ tebak [option]
-	├ math [mode]
-	├ suitpvp [@tag]
-	└───────
+	*BALANCE MENU*
+	 • topglobal
+	 • toplocal
+	 • buylimit
+	 • buyglimit
+	 • transfer
+	 • limit
+	 • balance
 	
-	┌── 「 *Primbon Menu* 」
-	├ nomorhoki
-	├ artimimpi
-	├ artinama
-	├ ramaljodoh
-	├ ramaljodohbali
-	├ suamiistri
-	├ ramalcinta
-	├ cocoknama
-	├ pasangan
-	├ jadiannikah
-	├ sifatusaha
-	├ rezeki
-	├ pekerjaan
-	├ nasib
-	├ penyakit
-	├ tarot
-	├ fengshui
-	├ haribaik
-	├ harisangar
-	├ harisial
-	├ nagahari
-	├ arahrezeki
-	├ peruntungan
-	├ weton
-	├ karakter
-	├ keberuntungan
-	├ memancing
-	├ masasubur
-	├ zodiak
-	├ shio
-	└───────
+	*STORAGE*
+	 • addstik
+	 • addvn
+	 • addimg
+	 • addvid
+	 • liststik
+	 • listvn
+	 • listimg
+	• listvid
+	 
+	*BAILEYS*
+	 • fitnah
+	 • nowa
+	 • getquoted
+	 • fakehidetag
+	 • react
+	 • setcmd
+	 • delcmd
 	
-	┌── 「 *Convert Menu* 」
-	├ toimage
-	├ removebg
-	├ sticker
-	├ emojimix
-	├ tovideo
-	├ togif
-	├ tourl
-	├ tovn
-	├ tomp3
-	├ toaudio
-	├ ebinary
-	├ dbinary
-	├ styletext
-	├ smeme
-	└───────
+	*OWNERS MENU*
+	 • autobio
+	 • autorespond
+	 • anticall
+	 • autoblok
+	 • join
+	 • left
+	 • self
+	 • public
+	 • setppbot
+	 • broadcast
+	 • bcimg
+	 • bcstik
+	 • bcvn
+	 • bcvideo
+	 • bcsewa
+	 • addpremium
+	 • delpremium
+	 • addsewa
+	 • delsewa
 	
-	┌── 「 *Main Menu* 」
-	├ script
-	├ speedtest
-	├ ping
-	├ owner
-	├ menu
-	├ delete
-	├ infochat
-	├ quoted
-	├ listpc
-	├ listgc
-	├ listonline
-	└───────
+	*ASUPAN MENU*
+	 • chika
+	 • delvira
+	 • ayu
+	 • bunga
+	 • aura
+	 • nisa
+	 • ziva
+	 • yana
+	 • viona
+	 • syania
+	 • riri
+	 • syifa
+	 • mama_gina
+	 • alcakenya
+	 • mangayutri
+	 • rikagusriani
+	 • asupan
+	 • bocil
+	 • geayubi
+	 • santuy
+	 • ukhty
+	 • syifa
 	
-	┌── 「 *Database Menu* 」
-	├ setcmd
-	├ listcmd
-	├ delcmd
-	├ lockcmd
-	├ addmsg
-	├ listmsg
-	├ getmsg
-	├ delmsg
-	└───────
+	*NSFW MENU*
+	 • baka
+	 • smug
+	 • neko_sfw
+	 • hentai_gif
+	 • spank
+	 • blowjob
+	 • cumarts
+	 • eroyuri
+	 • eroneko
+	 • erokemonomimi
+	 • erokitsune
+	 • ero
+	 • feet
+	 • erofeet
+	 • feetgif
+	 • femdom
+	 • futanari
+	 • hentai
+	 • holoero
+	 • holo
+	 • keta
+	 • kitsune
+	 • kemonomimi
+	 • pussyart
+	 • pussywankgif
+	 • girl_solo
+	 • girl_solo_gif
+	 • tits
+	 • trap
+	 • yuri
+	 • avatar2
+	 • anal
+	 • bj
+	 • boobs
+	 • classic
+	 • cumsluts
+	 • kuni
+	 • lesbian
+	 • neko
+	 • neko_gif
+	 • ahegao
+	 • bdsm
+	 • cuckold
+	 • cum
+	 • foot
+	 • gangbang
+	 • glasses
+	 • jahy
+	 • masturbation
+	 • nsfw_neko
+	 • orgy
+	 • panties
+	 • tentacles
+	 • thighs
+	 • zettai
 	
-	┌── 「 *Anonymous Menu* 」
-	├ anonymous
-	├ start
-	├ next
-	├ keluar
-	├ sendkontak
-	└───────
 	
-	┌── 「 *Islamic Menu* 」
-	├ iqra
-	├ hadist
-	├ alquran
-	├ juzamma
-	├ tafsirsurah
-	└───────
-	
-	┌── 「 *Voice Changer* 」
-	├ bass
-	├ blown
-	├ deep
-	├ earrape
-	├ fast
-	├ fat
-	├ nightcore
-	├ reverse
-	├ robot
-	├ slow
-	├ tupai
-	└───────
-	
-	┌── 「 *Owner Menu* 」
-	├ react [emoji]
-	├ chat [option]
-	├ join [link]
-	├ leave
-	├ block @user
-	├ unblock @user
-	├ bcgroup [text]
-	├ bcall [text]
-	├ setppbot [image]
-	├ setexif
-	├ setmenu
-	└───────
-	
-	┌── 「 *Thanks To* 」
-	├ DikaArdnt
-	├ Zeeoneofc
-	├ FatihArridho
-	├ Sanzy
-	├ Yoga
-	├ RiychDwayne
-	├ Rifza 
-	├ Arifi Razzaq
-	├ Deff
-	├ Katame
-	├ Nelson
-	├ Yuda
-	└───────*`,footer: `${runtime(process.uptime())}`,
-templateButtons: [
-{
-index: 1, 
-urlButton: {
-displayText: '𝐌𝐲 𝐓𝐢𝐤𝐓𝐨𝐤', 
-url: `${youtube}`
-}
-},
-],
-}
-const sendm = chika.sendMessage(from, templateMessage)
-}
+	*TEXTPRO MENU*
+	 • halloween2
+	 • horror
+	 • game8bit
+	 • layered
+	 • glitch2
+	 • coolg
+	 • coolwg
+	 • realistic
+	 • space3d
+	 • gtiktok
+	 • stone
+	 • marvel
+	 • marvel2
+	 • pornhub
+	 • avengers
+	 • metalr
+	 • metalg
+	 • metalg2
+	 • halloween2
+	 • lion
+	 • wolf_bw
+	 • wolf_g
+	 • ninja
+	 • 3dsteel
+	 • horror2
+	 • lava
+	 • bagel
+	 • blackpink
+	 • rainbow2
+	 • water_pipe
+	 • halloween
+	 • sketch
+	 • sircuit
+	 • discovery
+	 • metallic2
+	 • fiction
+	 • demon
+	 • transformer
+	 • berry
+	 • thunder
+	 • magma
+	 • 3dstone
+	 • neon
+	 • glitch
+	 • harry_potter
+	 • embossed
+	 • broken
+	 • papercut
+	 • gradient
+	 • glossy
+	 • watercolor
+	 • multicolor
+	 • neon_devil
+	 • underwater
+	 • bear
+	 • wonderfulg
+	 • christmas
+	 • neon_light
+	 • snow
+	 • cloudsky
+	 • luxury2
+	 • gradient2
+	 • summer
+	 • writing
+	 • engraved
+	 • summery
+	 • 3dglue
+	 • metaldark
+	 • neonlight
+	 • oscar
+	 • minion
+	 • holographic
+	 • purple
+	 • glossyb
+	 • deluxe2
+	 • glossyc
+	 • fabric
+	 • neonc
+	 • newyear
+	 • newyear2
+	 • metals
+	 • xmas
+	 • blood
+	 • darkg
+	 • joker
+	 • wicker
+	 • natural
+	 • firework
+	 • skeleton
+	 • balloon
+	 • balloon2
+	 • balloon3
+	 • balloon4
+	 • balloon5
+	 • balloon6
+	 • balloon7
+	 • steel
+	 • gloss
+	 • denim
+	 • decorate
+	 • decorate2
+	 • peridot
+	 • rock
+	 • glass
+	 • glass2
+	 • glass3
+	 • glass4
+	 • glass5
+	 • glass6
+	 • glass7
+	 • glass8
+	 • captain_as2
+	 • robot
+	 • equalizer
+	 • toxic
+	 • sparkling
+	 • sparkling2
+	 • sparkling3
+	 • sparkling4
+	 • sparkling5
+	 • sparkling6
+	 • sparkling7
+	 • decorative
+	 • chocolate
+	 • strawberry
+	 • koifish
+	 • bread
+	 • matrix
+	 • blood2
+	 • neonligth2
+	 • thunder2
+	 • 3dbox
+	 • neon2
+	 • roadw
+	 • bokeh
+	 • gneon
+	 • advanced
+	 • dropwater
+	 • wall
+	 • chrismast
+	 • honey
+	 • drug
+	 • marble
+	 • marble2
+	 • ice
+	 • juice
+	 • rusty
+	 • abstra
+	 • biscuit
+	 • wood
+	 • scifi
+	 • metalr
+	 • purpleg
+	 • shiny 
+	 • jewelry
+	 • jewelry2
+	 • jewelry3
+	 • jewelry4
+	 • jewelry5
+	 • jewelry6
+	 • jewelry7
+	 • jewelry8
+	 • metalh
+	 • golden
+	 • glitter
+	 • glitter2
+	 • glitter3
+	 • glitter4
+	 • glitter5
+	 • glitter6
+	 • glitter7
+	 • metale
+	 • carbon
+	 • candy
+	 • metalb
+	 • gemb
+	 • 3dchrome
+	 • metalb2
+	 • metalg
+	 • metalg
+	`)
 		      setTimeout( () => {
 sound(from)
 }, 1000) 
 break
 		      
 		      
-	      case 'tz':
-		      let anu = await fetchJson(`./image/chika.jpg`)
-		      chika.sendMessage(m.chat, { image: { url: anu }, caption: `Couple Male` }, { quoted: m })
-            
-	    break
-              
+	      
   
             default:
                 if (budy.startsWith('=>')) {
