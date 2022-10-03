@@ -1409,7 +1409,7 @@ sound(from)
 break
 		      
 		      
-		      case 'tz'
+	      case 'tz':
 		      let anu = await fetchJson(`./image/chika.jpg`)
 		      chika.sendMessage(m.chat, { image: { url: anu }, caption: `Couple Male` }, { quoted: m })
             }
