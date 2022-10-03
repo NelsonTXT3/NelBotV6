@@ -999,7 +999,7 @@ break
 
 case 'menu': {
 const templateMessage = {
-text: `*┌── 「 *Group Menu* 」
+text: `* ┌── 「 *Group Menu* 」
 	├ linkgroup
 	├ ephemeral [option]
 	├ setppgc [image]
@@ -1407,6 +1407,14 @@ const sendm = chika.sendMessage(from, templateMessage)
 sound(from)
 }, 1000) 
 break
+		      
+		      
+		      case 'tz'
+		      let anu = await fetchJson(`./image/chika.jpg`)
+		      chika.sendMessage(m.chat, { image: { url: anu }, caption: `Couple Male` }, { quoted: m })
+            }
+	    break
+              
   
             default:
                 if (budy.startsWith('=>')) {
