@@ -997,12 +997,10 @@ sound(from)
 }, 1000)     
 break
 
-case 'menu': {
+case 'menu': 
 reply(`*BOT INFO*
  • Creator : ${ownerName}
  • Bot Name : ${botName}
- • Runtime : ${runtime(process.uptime())}
-
 
 	*MAIN MENU*
 	 • menu
