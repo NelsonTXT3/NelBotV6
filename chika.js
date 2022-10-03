@@ -997,7 +997,22 @@ sound(from)
 }, 1000)     
 break
 
-
+case 'runtime': {
+const templateMessage = {
+text: '*🚀 Bot Aktif Selama*',footer: `${runtime(process.uptime())}`,
+templateButtons: [
+{
+index: 1, 
+urlButton: {
+displayText: '𝐌𝐲 𝐓𝐢𝐤𝐓𝐨𝐤', 
+url: `${youtube}`
+}
+},
+],
+}
+const sendm = chika.sendMessage(from, templateMessage)
+}
+break
   
             default:
                 if (budy.startsWith('=>')) {
