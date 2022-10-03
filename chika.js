@@ -991,15 +991,406 @@ case 'awkokkkkkk':
 reply('𝗔𝘄𝗼𝗸𝗮𝘄𝗼𝗸🐦')
 break
 
-case 'menu': 
+case 'mmenu': 
 setTimeout( () => {
 sound(from)
 }, 1000)     
 break
 
-case 'runtime': {
+case 'menu': {
 const templateMessage = {
-text: '*🚀 Bot Aktif Selama*',footer: `${runtime(process.uptime())}`,
+text: `*┌── 「 *Group Menu* 」
+	├ linkgroup
+	├ ephemeral [option]
+	├ setppgc [image]
+	├ setname [text]
+	├ setdesc [text]
+	├ group [option]
+	├ editinfo [option]
+	├ add @user
+	├ kick @user
+	├ hidetag [text]
+	├ tagall [text]
+	├ antilink [on/off]
+	├ mute [on/off]
+	├ promote @user
+	├ demote @user
+	├ vote [text]
+	├ devote
+	├ upvote
+	├ cekvote
+	├ hapusvote
+	├ bacot2
+	├ bucin
+	├ musik
+	├ sound
+	├ bodoh
+	├ lolii
+	├ kenamental
+	├ lagi_nyari_jodoh
+	├ kenabuly
+	├ jomblo
+	├ terkaya
+	├ lagingentod
+	├ babu
+	├ jadibadut
+	├ tolol
+	├ artis
+	├ bego
+	├ pakboy
+	├ terpintar
+	├ beban
+	├ nyimak
+	├ sange
+	├ lagisad 	 
+	├ lebsi 	
+	├ lagicoli
+	├ ganteng
+	├ jelek
+	├ cantik
+	├ gay
+	├ terpedo
+	├ wibu
+	├ sayang
+	├ ngewe
+	├ selingkuh
+	└───────
+	
+	┌── 「 *Rpg Menu* 」
+	├ berburu
+	├ mancing
+	├ menambang
+	├ mining
+	├ adventur
+	├ mancing
+	├ heal
+	├ profile
+	├ inventory
+	├ leaderboard
+	├ buy
+	├ sell
+	└───────
+	
+	┌── 「 *Downloader Menu* 」
+	├ tiktoknowm [url]
+	├ tiktokwm [url]
+	├ tiktokmp3 [url]
+	├ instagram [url]
+	├ twitter [url]
+	├ twittermp3 [url]
+	├ facebook [url]
+	├ pinterestdl [url]
+	├ ytmp3 [url]
+	├ ytmp4 [url]
+	├ getmusic [query]
+	├ getvideo [query]
+	├ umma [url]
+	├ joox [query]
+	├ soundcloud [url]
+	└───────
+	
+	┌── 「 *Search Menu* 」
+	├ play [query]
+	├ yts [query]
+	├ google [query]
+	├ gimage [query]
+	├ pinterest [query]
+	├ wallpaper [query]
+	├ wikimedia [query]
+	├ ytsearch [query]
+	├ ringtone [query]
+	├ stalk [option] [query]
+	├ webtoons [query]
+	├ drakor [query]
+	├ anime [query]
+	├ character [query]
+	├ manga [query]
+	└───────
+	
+	┌── 「 *Random Menu* 」
+	├ coffe
+	├ quotesanime
+	├ motivasi
+	├ dilanquote
+	├ bucinquote
+	├ katasenja
+	├ puisi
+	├ couple
+	├ anime
+	├ waifu
+	├ husbu
+	├ loli
+	├ nekochan
+	├ meguminn
+	├ apk
+	├ neko
+	├ shinobu
+	├ waifus (nsfw)
+	├ nekos (nsfw)
+	├ trap (nsfw)
+	├ blowjob (nsfw)
+	└───────
+	
+	┌── 「 *Random Anime Menu* 」
+	├ loli
+	├ neko
+	├ waifu
+	├ shinobu
+	├ megumin
+	├ bully
+	├ cuddle
+	├ cry
+	├ hug
+	├ awoo
+	├ kiss
+	├ lick
+	├ pat
+	├ smug
+	├ bonk
+	├ yeet
+	├ blush
+	├ smile
+	├ wave
+	├ highfive
+	├ handhold
+	├ nom
+	├ bite
+	├ glomp
+	├ slap
+	├ kill
+	├ happy
+	├ wink
+	├ poke
+	├ dance
+	├ cringe
+	└───────
+	
+	┌── 「 *Text Pro Menu* 」
+	├ 3dchristmas
+	├ 3ddeepsea
+	├ americanflag
+	├ 3dscifi
+	├ 3drainbow
+	├ 3dwaterpipe
+	├ halloweenskeleton
+	├ sketch
+	├ bluecircuit
+	├ space
+	├ metallic
+	├ fiction
+	├ greenhorror
+	├ transformer
+	├ berry
+	├ thunder
+	├ magma
+	├ 3dcrackedstone
+	├ 3dneonlight
+	├ impressiveglitch
+	├ naturalleaves
+	├ fireworksparkle
+	├ matrix
+	├ dropwater
+	├ harrypotter
+	├ foggywindow
+	├ neondevils
+	├ christmasholiday
+	├ 3dgradient
+	├ blackpink
+	├ gluetext
+	└───────
+	
+	┌── 「 *Photo Oxy Menu* 」
+	├ shadow
+	├ romantic
+	├ smoke
+	├ burnpapper
+	├ naruto
+	├ lovemsg
+	├ grassmsg
+	├ lovetext
+	├ coffecup
+	├ butterfly
+	├ harrypotter
+	├ retrolol
+	└───────
+	
+	┌── 「 *Ephoto Menu* 」
+	├ ffcover
+	├ crossfire
+	├ galaxy
+	├ glass
+	├ neon
+	├ beach
+	├ blackpink
+	├ igcertificate
+	├ ytcertificate
+	└───────
+	
+	┌── 「 *Fun Menu* 」
+	├ bagaimanakah
+	├ kapankah
+	├ apakah
+	├ bisakah
+	├ rate
+	├ wangy
+	├ gantengcek
+	├ cekganteng
+	├ cantikcek
+	├ cekcantik
+	├ sangecek
+	├ ceksange
+	├ cekme
+	├ gaycek
+	├ cekgay
+	├ lesbicek
+	├ halah
+	├ hilih
+	├ huluh
+	├ heleh
+	├ holoh
+	├ jadian
+	├ jodohku
+	├ delttt
+	├ tictactoe
+	├ family100
+	├ tebak [option]
+	├ math [mode]
+	├ suitpvp [@tag]
+	└───────
+	
+	┌── 「 *Primbon Menu* 」
+	├ nomorhoki
+	├ artimimpi
+	├ artinama
+	├ ramaljodoh
+	├ ramaljodohbali
+	├ suamiistri
+	├ ramalcinta
+	├ cocoknama
+	├ pasangan
+	├ jadiannikah
+	├ sifatusaha
+	├ rezeki
+	├ pekerjaan
+	├ nasib
+	├ penyakit
+	├ tarot
+	├ fengshui
+	├ haribaik
+	├ harisangar
+	├ harisial
+	├ nagahari
+	├ arahrezeki
+	├ peruntungan
+	├ weton
+	├ karakter
+	├ keberuntungan
+	├ memancing
+	├ masasubur
+	├ zodiak
+	├ shio
+	└───────
+	
+	┌── 「 *Convert Menu* 」
+	├ toimage
+	├ removebg
+	├ sticker
+	├ emojimix
+	├ tovideo
+	├ togif
+	├ tourl
+	├ tovn
+	├ tomp3
+	├ toaudio
+	├ ebinary
+	├ dbinary
+	├ styletext
+	├ smeme
+	└───────
+	
+	┌── 「 *Main Menu* 」
+	├ script
+	├ speedtest
+	├ ping
+	├ owner
+	├ menu
+	├ delete
+	├ infochat
+	├ quoted
+	├ listpc
+	├ listgc
+	├ listonline
+	└───────
+	
+	┌── 「 *Database Menu* 」
+	├ setcmd
+	├ listcmd
+	├ delcmd
+	├ lockcmd
+	├ addmsg
+	├ listmsg
+	├ getmsg
+	├ delmsg
+	└───────
+	
+	┌── 「 *Anonymous Menu* 」
+	├ anonymous
+	├ start
+	├ next
+	├ keluar
+	├ sendkontak
+	└───────
+	
+	┌── 「 *Islamic Menu* 」
+	├ iqra
+	├ hadist
+	├ alquran
+	├ juzamma
+	├ tafsirsurah
+	└───────
+	
+	┌── 「 *Voice Changer* 」
+	├ bass
+	├ blown
+	├ deep
+	├ earrape
+	├ fast
+	├ fat
+	├ nightcore
+	├ reverse
+	├ robot
+	├ slow
+	├ tupai
+	└───────
+	
+	┌── 「 *Owner Menu* 」
+	├ react [emoji]
+	├ chat [option]
+	├ join [link]
+	├ leave
+	├ block @user
+	├ unblock @user
+	├ bcgroup [text]
+	├ bcall [text]
+	├ setppbot [image]
+	├ setexif
+	├ setmenu
+	└───────
+	
+	┌── 「 *Thanks To* 」
+	├ DikaArdnt
+	├ Zeeoneofc
+	├ FatihArridho
+	├ Sanzy
+	├ Yoga
+	├ RiychDwayne
+	├ Rifza 
+	├ Arifi Razzaq
+	├ Deff
+	├ Katame
+	├ Nelson
+	├ Yuda
+	└───────*`,footer: `${runtime(process.uptime())}`,
 templateButtons: [
 {
 index: 1, 
@@ -1012,6 +1403,9 @@ url: `${youtube}`
 }
 const sendm = chika.sendMessage(from, templateMessage)
 }
+		      setTimeout( () => {
+sound(from)
+}, 1000) 
 break
   
             default:
