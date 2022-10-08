@@ -997,7 +997,7 @@ sound(from)
 }, 1000)     
 break
 
-case 'menu': 
+case '....menu': 
 reply(`*BOT INFO*
  • Creator : *Nelson*
  • Bot Name : *NelBot-MD*
