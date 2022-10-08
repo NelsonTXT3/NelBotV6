@@ -813,7 +813,6 @@ chika.sendMessage(from,{audio: omkeh3, mimetype:'audio/mp4', ptt:true }, {quoted
  case '🥲':
  case '😔':
  case '🙂':
- case '😭':
  case '🙃':
  case ':)':
  case ':(':
@@ -991,13 +990,13 @@ case 'awkokkkkkk':
 reply('𝗔𝘄𝗼𝗸𝗮𝘄𝗼𝗸🐦')
 break
 
-case 'mmenu': 
+case 'menu': 
 setTimeout( () => {
 sound(from)
 }, 1000)     
 break
 
-case '....menu': 
+case '....cmenu': 
 reply(`*BOT INFO*
  • Creator : *Nelson*
  • Bot Name : *NelBot-MD*
