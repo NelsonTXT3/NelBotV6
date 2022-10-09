@@ -672,7 +672,7 @@ case 'son':
 case 'Son':
 case 'P':
 if (m.isGroup) return
-reply(`𝐈𝐲𝐚 𝐀𝐝𝐚 𝐘𝐚𝐧𝐠 𝐁𝐢𝐬𝐚 𝐒𝐚𝐲𝐚 𝐁𝐚𝐧𝐭𝐮 𝐊𝐚𝐤 ${pushname} ?\nKetik menu jika ingin menggunakan bot\nJika mencari Nelson *chat wa.me//6281241100804`)
+reply(`𝐈𝐲𝐚 𝐀𝐝𝐚 𝐘𝐚𝐧𝐠 𝐁𝐢𝐬𝐚 𝐒𝐚𝐲𝐚 𝐁𝐚𝐧𝐭𝐮 𝐊𝐚𝐤 ${pushname} ?\nKetik #menu jika ingin menggunakan bot`)
 break
 
 case "virtex":
@@ -784,7 +784,65 @@ break
                 chika.sendMessage(m.chat, { image: { url: random.female }, caption: `Couple Female` }, { quoted: m })
             }
 	    break
-		      
+		      case 'apakah':
+      if (!q) return reply(`Penggunaan ${command} text\n\nContoh : ${command} saya menjadi wibu`)
+      const apa = ['Iya', 'Tidak','coba tanya Mamamu', 'Bisa Jadi','coba tanya Tuhan','Mungkin','ya nda tau ko tanya saya','Sudahi halumu mari menjadi babu bersamaku>_<']
+      const kah = apa[Math.floor(Math.random() * apa.length)]
+      reply(`${kah} `)
+break
+
+
+
+case 'bisakah':
+      if (!isBotAdmins) return
+      if (!q) return reply(`Penggunaan ${command} text\n\nContoh : ${command} saya wibu`)
+      const bisa = ['Bisa','sudahi halumu mari menjadi babu bersamaku>_<','mungkin','Gak Bisa','mustahil','TENTU PASTI KAMU BISA!!!!']
+      const ga = bisa[Math.floor(Math.random() * bisa.length)]
+      reply(`${ga} `)
+break
+
+case 'bagaimanakah':
+      if (!isBotAdmins) return
+      if (!q) return reply(`Penggunaan ${command} text\n\nContoh : ${command} saya wibu`)
+      const gimana = ['Gak Gimana2', 'Sulit Itu Bro', 'Maaf Bot Tidak Bisa Menjawab', 'Coba Deh Cari Di Gugel','astaghfirallah Beneran???','Pusing ah','Owhh Begitu:(','Yang Sabar Ya Bos:(','Gimana yeee']
+      const ya = gimana[Math.floor(Math.random() * gimana.length)]
+      reply(`${ya}`)
+break
+
+case 'rate':
+case 'nilai':
+      if (!isBotAdmins) return		    
+      const ra = ['5', '10', '15' ,'20', '25','30','35','40','45','50','55','60','65','70','75','80','85','90','100']
+      const te = ra[Math.floor(Math.random() * ra.length)]
+      reply(`${te}% `)
+break
+
+case 'gantengcek':
+case 'cekganteng':
+case 'cantikcek':
+case 'cekcantik': 
+case 'sangecek':
+case 'ceksange':
+case 'gaycek':
+case 'cekgay':
+case 'lesbicek':
+case 'ceklesbi':
+      if (!isBotAdmins) return
+      if (!q) return reply(`Penggunaan ${command} Nama\n\nContoh : ${command} ${pushname}`)
+      const sangeh = ['0','1','2','3','4','5','10', '15','20', '25','30','35','40','45','50','55','60','65','70','75','80','85','90','100']
+      const sange = sangeh[Math.floor(Math.random() * sangeh.length)]
+      reply(`${command} ${q}\n\n${sange}% `)
+break
+
+case 'kapankah':
+case 'kapan':
+      if (!isBotAdmins) return
+      if (!q) return reply(`Penggunaan ${command} Pertanyaan\n\nContoh : ${command} Saya Mati`)
+      const kapan = ['5 Hari Lagi', '10 Hari Lagi', '15 Hari Lagi','20 Hari Lagi', '25 Hari Lagi','30 Hari Lagi','35 Hari Lagi','40 Hari Lagi','45 Hari Lagi','50 Hari Lagi','55 Hari Lagi','60 Hari Lagi','65 Hari Lagi','70 Hari Lagi','75 Hari Lagi','80 Hari Lagi','85 Hari Lagi','90 Hari Lagi','100 Hari Lagi','5 Bulan Lagi', '10 Bulan Lagi', '15 Bulan Lagi','20 Bulan Lagi', '25 Bulan Lagi','30 Bulan Lagi','35 Bulan Lagi','40 Bulan Lagi','45 Bulan Lagi','50 Bulan Lagi','55 Bulan Lagi','60 Bulan Lagi','65 Bulan Lagi','70 Bulan Lagi','75 Bulan Lagi','80 Bulan Lagi','85 Bulan Lagi','90 Bulan Lagi','100 Bulan Lagi','1 Tahun Lagi','2 Tahun Lagi','3 Tahun Lagi','4 Tahun Lagi','5 Tahun Lagi','Besok','Lusa',`Abis Command Ini Juga Lu ${q}`]
+      const kapankah = kapan[Math.floor(Math.random() * kapan.length)]
+      reply(`${kapankah}`)
+break
+
 		      
 		      case 'bass': case 'blown': case 'deep': case 'earrape': case 'fast': case 'fat': case 'nightcore': case 'reverse': case 'robot': case 'slow': case 'smooth': case 'tupai':
                 try {
