@@ -843,6 +843,23 @@ case 'kapan':
       reply(`${kapankah}`)
 break
 
+		case 'family100': {
+                if ('family100'+m.chat in _family100) {
+                    m.reply('Masih Ada Sesi Yang Belum Diselesaikan!')
+                    throw false
+                }
+                let anu = await fetchJson('https://raw.githubusercontent.com/BochilTeam/database/master/games/family100.json')
+                let random = anu[Math.floor(Math.random() * anu.length)]
+                let hasil = `*Jawablah Pertanyaan Berikut :*\n${random.soal}\n\nTerdapat *${random.jawaban.length}* Jawaban ${random.jawaban.find(v => v.includes(' ')) ? `(beberapa Jawaban Terdapat Spasi)` : ''}`.trim()
+                _family100['family100'+m.chat] = {
+                    id: 'family100'+m.chat,
+                    pesan: await chika.sendText(m.chat, hasil, m),
+                    ...random,
+                    terjawab: Array.from(random.jawaban, () => false),
+                    hadiah: 6,
+                }
+            }
+            break
 		      
 		      case 'bass': case 'blown': case 'deep': case 'earrape': case 'fast': case 'fat': case 'nightcore': case 'reverse': case 'robot': case 'slow': case 'smooth': case 'tupai':
                 try {
@@ -1034,7 +1051,7 @@ nangis(from)
  case 'bot babi':
  if (!m.isGroup) return apasih(from)
  if (!isBotAdmins) return
- if (isAdmins) return araara(from)
+ 
  const bisaaa = ['apasih','image/Gaboleh gitu']
 const gaaa = bisaaa[Math.floor(Math.random() * bisaaa.length)]
  omkeh4 = fs.readFileSync(`./${gaaa}.mp3`)
